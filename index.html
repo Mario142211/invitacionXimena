@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis XV - Ximena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Inicio</a>
+    <a href="#gallery">Galería</a>
+    <a href="#location">Ubicación</a>
+    <a href="#contact">Contacto</a>
+    <a href="#rsvp">Confirmación</a>
+  </nav>
+
+  <header id="home">
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="./media/Foto_ximena1.jpg" alt="Imagen 1">
+        <img src="./media/Foto_ximena2.jpg" alt="Imagen 2">
+        <img src="./media/Foto_ximena3.jpg" alt="Imagen 3">
+        <img src="./media/Foto_ximena4.jpg" alt="Imagen 4">
+        <img src="./media/Foto_ximena5.jpg" alt="Imagen 5">
+        <img src="./media/Foto_ximena6.jpg" alt="Imagen 6">
+      </div>
+      <div class="header-content">
+        <h1>Mis XV - Ximena</h1>
+        <h2>Bienvenidos a la fiesta</h2>
+        <h3>Fecha: 27 de Diciembre de 2024</h3>
+        <!-- Contador regresivo -->
+        <div id="countdown">
+          <p id="countdown-text">Quedan:</p>
+          <p id="countdown-timer"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="gallery">
+    <h3>Galería</h3>
+    <div class="gallery">
+      <img src="./media/Foto_ximena1.jpg" alt="Foto 1">
+      <img src="./media/Foto_ximena2.jpg" alt="Foto 2">
+      <img src="./media/Foto_ximena3.jpg" alt="Foto 3">
+      <img src="./media/Foto_ximena4.jpg" alt="Foto 4">
+      <img src="./media/Foto_ximena5.jpg" alt="Foto 5">
+      <img src="./media/Foto_ximena6.jpg" alt="Foto 6">
+    </div>
+  </section>
+
+  <section id="location">
+    <h3>Ubicación</h3>
+    <p>¡Aquí será la fiesta!</p>
+    <a href="https://maps.app.goo.gl/HvnAjc75sJUUni4H8?g_st=iw" target="_blank">Ver ubicación en Google Maps</a>
+    <div class="map-container">
+      <img src="./media/Mapa_Ximena.jpg" alt="Mapa de la ubicación">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contacto</h3>
+    <p>Mis XV - Ximena - Diciembre 2024</p>
+    <p>Correo: arcodimario@outlook.com </p>
+    <p>Telefono: 742</p>
+  </section>
+
+  <!-- Sección del formulario de confirmación -->
+  <section id="rsvp">
+    <h3>Confirmación de asistencia</h3>
+    <div class="confirmation-form">
+      <form id="confirmationForm">
+        <label for="name">Nombre completo:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+        <label for="guests">Número de invitados:</label>
+        <select id="guests" name="guests" required>
+          <option value="">Selecciona una opción</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        <button type="submit">Confirmar asistencia</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Mis XV - Ximena</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
